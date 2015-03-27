@@ -450,6 +450,7 @@ class JalaliDateTime
 
     /**
      * Returns correct names for months
+     * @param integer $month
      */
     private static function getMonthNames($month, $shorten = false, $len = 3)
     {
@@ -465,6 +466,7 @@ class JalaliDateTime
 
     /**
      * Converts latin numbers to farsi script
+     * @param string $matches
      */
     private static function convertNumbers($matches)
     {
@@ -476,6 +478,7 @@ class JalaliDateTime
 
     /**
      * Division
+     * @param integer $b
      */
     private static function div($a, $b)
     {
@@ -484,6 +487,9 @@ class JalaliDateTime
 
     /**
      * Substring helper
+     * @param string $str
+     * @param integer $start
+     * @param integer $len
      */
     private static function substr($str, $start, $len)
     {
